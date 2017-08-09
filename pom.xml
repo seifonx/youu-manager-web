@@ -25,7 +25,6 @@
             <groupId>org.activiti</groupId>
             <artifactId>activiti-spring</artifactId>
         </dependency>
-
         <!-- 时间日期 -->
         <dependency>
             <groupId>joda-time</groupId>

@@ -14,15 +14,16 @@ import javax.servlet.ServletContextListener;
  */
 public class MyAppListener implements ServletContextListener {
 
-    @Override
-    public void contextInitialized(ServletContextEvent sce) {
-        ServletContext servletContext = sce.getServletContext();
+	public void contextDestroyed(ServletContextEvent sce) {
+		ServletContext servletContext = sce.getServletContext();
         servletContext.setAttribute("ctp", servletContext.getContextPath());
-    }
+		
+	}
 
-    @Override
-    public void contextDestroyed(ServletContextEvent sce) {
-        
-    }
+	public void contextInitialized(ServletContextEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

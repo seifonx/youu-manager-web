@@ -66,7 +66,9 @@ public class IllegalCharacterFilter implements Filter {
             this.characterParams = ("<,>," + config.getInitParameter("characterParams")).split(",");
     }
 
-    @Override
-    public void destroy() {}
+	public void destroy() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
