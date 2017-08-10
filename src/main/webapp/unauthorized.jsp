@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-    没有权限页面
+	没有权限页面
 </body>
 </html>
