@@ -33,7 +33,6 @@ public class ShiroRealm extends AuthorizingRealm {
 		// 获取token（就是浏览器传的参数），通过currentUser.login(token)过来的
 		UsernamePasswordToken uToken = (UsernamePasswordToken) token;
 		String username = uToken.getUsername();
-		String password = new String(uToken.getPassword());
 		// 从数据库中获取用户名和密码
 		TUser tUser = bUserService.getManagerByLoginacc(username);
 		if (tUser == null) {
