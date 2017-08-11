@@ -7,6 +7,7 @@ public class FilterChainDefinitionMapBuilder {
 		LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 
 		map.put("/**/*.css", "anon");
+		map.put("/manager/login", "anon");
 		map.put("/shiro/test", "anon");
 		map.put("/**/*.js", "anon");
 		map.put("/**/*.png", "anon");

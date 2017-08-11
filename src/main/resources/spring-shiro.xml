@@ -40,7 +40,7 @@
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
 		<property name="loginUrl" value="/login.jsp" />
-		<property name="unauthorizedUrl" value="/index.jsp" />
+		<property name="unauthorizedUrl" value="/login.jsp" />
 		<property name="filterChainDefinitionMap" ref="filterChainDefinitionMap"></property>
 	</bean>
 	<bean id="filterChainDefinitionMap" factory-bean="filterChainDefinitionMapBuilder" factory-method="buildFilterChainDefinitionMap"></bean>
