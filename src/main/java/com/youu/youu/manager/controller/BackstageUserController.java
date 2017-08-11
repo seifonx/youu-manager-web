@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.youu.youu.manager.bean.TUser;
 import com.youu.youu.manager.service.BackstageUserService;
@@ -17,6 +18,7 @@ import com.youu.youu.manager.service.BackstageUserService;
 public class BackstageUserController {
 	@Autowired
 	BackstageUserService bUserService;
+	
 
 	@RequestMapping("/login")
 	private String login(TUser tUser) {
