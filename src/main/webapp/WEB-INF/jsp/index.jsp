@@ -9,19 +9,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
-	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+	<link rel="stylesheet" href="${ctp}/assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${ctp}/assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="${ctp}/assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="${ctp}/assets/vendor/chartist/css/chartist-custom.css">
 	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="${ctp}/assets/css/main.css">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
-	<link rel="stylesheet" href="assets/css/demo.css">
+	<link rel="stylesheet" href="${ctp}/assets/css/demo.css">
 	<!-- GOOGLE FONTS -->
-	<link href="assets/css/icon.css" rel="stylesheet">
+	<link href="${ctp}/assets/css/icon.css" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="${ctp}/assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="${ctp}/assets/img/favicon.png">
+	
+	<!-- Javascript -->
+	<script src="${ctp}/assets/vendor/jquery/jquery.min.js"></script>
+	<script src="${ctp}/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="${ctp}/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="${ctp}/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="${ctp}/assets/vendor/chartist/js/chartist.min.js"></script>
+	<script src="${ctp}/assets/scripts/klorofil-common.js"></script>
 </head>
 
 <body>
@@ -30,7 +38,7 @@
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
-				<a href="index.html"><img src="assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+				<a href="index.html"><img src="${ctp}/assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
 			</div>
 			<div class="container-fluid">
 				<div class="navbar-btn">
@@ -65,7 +73,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar"> <span>赛姆斯</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${ctp}/assets/img/user.png" class="img-circle" alt="Avatar"> <span>赛姆斯</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#"><i class="lnr lnr-user"></i> <span>个人中心</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>消息</span></a></li>
@@ -357,23 +365,23 @@
 								<div class="panel-body">
 									<ul class="list-unstyled activity-list">
 										<li>
-											<img src="assets/img/user1.png" alt="Avatar" class="img-circle pull-left avatar">
+											<img src="${ctp}/assets/img/user1.png" alt="Avatar" class="img-circle pull-left avatar">
 											<p><a href="#">Michael</a> 添加了一个广告<span class="timestamp">20 分钟之前</span></p>
 										</li>
 										<li>
-											<img src="assets/img/user2.png" alt="Avatar" class="img-circle pull-left avatar">
+											<img src="${ctp}/assets/img/user2.png" alt="Avatar" class="img-circle pull-left avatar">
 											<p><a href="#">Daniel</a> 发布了一条旅游信息 <span class="timestamp">昨天</span></p>
 										</li>
 										<li>
-											<img src="assets/img/user3.png" alt="Avatar" class="img-circle pull-left avatar">
+											<img src="${ctp}/assets/img/user3.png" alt="Avatar" class="img-circle pull-left avatar">
 											<p><a href="#">Martha</a> 创建了一条广告 <span class="timestamp">2 天前</span></p>
 										</li>
 										<li>
-											<img src="assets/img/user4.png" alt="Avatar" class="img-circle pull-left avatar">
+											<img src="${ctp}/assets/img/user4.png" alt="Avatar" class="img-circle pull-left avatar">
 											<p><a href="#">Jane</a> 删除了一个管理员 <span class="timestamp">2 天前</span></p>
 										</li>
 										<li>
-											<img src="assets/img/user5.png" alt="Avatar" class="img-circle pull-left avatar">
+											<img src="${ctp}/assets/img/user5.png" alt="Avatar" class="img-circle pull-left avatar">
 											<p><a href="#">Jason</a> 添加了一条消息模版 <span class="timestamp">3 天前</span></p>
 										</li>
 									</ul>
@@ -396,18 +404,11 @@
 		</footer>
 	</div>
 	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="assets/vendor/chartist/js/chartist.min.js"></script>
-	<script src="assets/scripts/klorofil-common.js"></script>
+	
 	<script>
 	$(function() {
 		var data, options;
-
-		// headline charts
+		// 大标题图表
 		data = {
 			labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 			series: [
@@ -431,7 +432,7 @@
 		new Chartist.Line('#headline-chart', data, options);
 
 
-		// visits trend charts
+		// 访问趋势折线图表
 		data = {
 			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 			series: [{
@@ -472,53 +473,6 @@
 		};
 
 		new Chartist.Line('#visits-trends-chart', data, options);
-
-
-		// visits chart
-		data = {
-			labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-			series: [
-				[6384, 6342, 5437, 2764, 3958, 5068, 7654]
-			]
-		};
-
-		options = {
-			height: 300,
-			axisX: {
-				showGrid: false
-			},
-		};
-
-		new Chartist.Bar('#visits-chart', data, options);
-
-
-		// real-time pie chart
-		var sysLoad = $('#system-load').easyPieChart({
-			size: 130,
-			barColor: function(percent) {
-				return "rgb(" + Math.round(200 * percent / 100) + ", " + Math.round(200 * (1.1 - percent / 100)) + ", 0)";
-			},
-			trackColor: 'rgba(245, 245, 245, 0.8)',
-			scaleColor: false,
-			lineWidth: 5,
-			lineCap: "square",
-			animate: 800
-		});
-
-		var updateInterval = 3000; // in milliseconds
-
-		setInterval(function() {
-			var randomVal;
-			randomVal = getRandomInt(0, 100);
-
-			sysLoad.data('easyPieChart').update(randomVal);
-			sysLoad.find('.percent').text(randomVal);
-		}, updateInterval);
-
-		function getRandomInt(min, max) {
-			return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
-
 	});
 	</script>
 </body>

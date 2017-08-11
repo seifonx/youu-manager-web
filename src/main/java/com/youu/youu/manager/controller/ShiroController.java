@@ -33,7 +33,7 @@ public class ShiroController {
                 System.out.println("登录失败---》" + ae);
             }
         }
-        return "redirect:/list.jsp";
+        return "index";
         
     }
     

@@ -17,7 +17,7 @@ public class MyAppListener implements ServletContextListener {
 	public void contextDestroyed(ServletContextEvent sce) {
 		ServletContext servletContext = sce.getServletContext();
         servletContext.setAttribute("ctp", servletContext.getContextPath());
-		
+		System.out.println(servletContext.getAttribute("ctp"));
 	}
 
 	public void contextInitialized(ServletContextEvent arg0) {

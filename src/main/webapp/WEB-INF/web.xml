@@ -20,7 +20,7 @@
 
 	<!-- Tomcat启动监听器 -->
 	<listener>
-		<listener-class>com.youu.youu.manager.listener.MyAppListener</listener-class>
+		<listener-class>com.youu.youu.manager.listener.MySessionListener</listener-class>
 	</listener>
 
 	<!-- 配置springmvc的前端控制器 -->
