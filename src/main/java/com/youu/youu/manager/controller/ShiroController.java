@@ -4,19 +4,12 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.youu.youu.manager.bean.Ttest;
-import com.youu.youu.manager.service.TestService;
 
 @Controller
 @RequestMapping("shiro")
 public class ShiroController {
-	@Autowired
-	TestService testService;
     
     @RequestMapping("login")
     public String login(String username,String password) {
@@ -36,13 +29,5 @@ public class ShiroController {
         return "index";
         
     }
-    
-    @ResponseBody
-    @RequestMapping("test")
-    public Ttest test123(){
-    	Ttest tt = testService.getTest();
-		return tt;
-    }
-    
     
 }
