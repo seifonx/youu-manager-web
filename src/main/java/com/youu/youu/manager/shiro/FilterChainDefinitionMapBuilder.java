@@ -7,8 +7,6 @@ public class FilterChainDefinitionMapBuilder {
 		LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 
 		map.put("/**/*.css", "anon");
-		map.put("/manager/login", "anon");
-		map.put("/shiro/test", "anon");
 		map.put("/**/*.js", "anon");
 		map.put("/**/*.png", "anon");
 		map.put("/**/*.jpg", "anon");
@@ -16,8 +14,8 @@ public class FilterChainDefinitionMapBuilder {
 		map.put("/**/*.woff", "anon");
 		map.put("/**/*.ttf", "anon");
 		map.put("/**/*.svg", "anon");
-		map.put("/login.jsp", "anon");
-		map.put("/index.jsp", "anon");
+		map.put("/manager/login", "anon");
+		map.put("/index.html", "roles[manager]");
 		map.put("/shiro/login", "anon");
 		map.put("/shiro/logout", "logout");
 		map.put("/user.jsp", "authc,roles[user]");

@@ -22,26 +22,23 @@ public class BackstageUserController {
 	private String login(TUser tUser) {
 		String loginacct = tUser.getLoginacct();
 		String password = tUser.getPassword();
-		if (StringUtils.isEmpty(password)&&StringUtils.isEmpty(loginacct)) {
-			//输入不对
+		if (StringUtils.isEmpty(password) && StringUtils.isEmpty(loginacct)) {
+			// 输入不对
+			return "redirect:/login.jsp";
 		}
 		Subject currentUser = SecurityUtils.getSubject();
-		//如果当前用户未认证
-		if (!currentUser.isAuthenticated()) {
-			// 把用户名和密码封装为 UsernamePasswordToken 对象
-			UsernamePasswordToken token = new UsernamePasswordToken(
-					loginacct, password);
-			// token.setRememberMe(true);
-			try {
-				// 执行登录.
-				currentUser.login(token);
-			} catch (AuthenticationException ae) {
-				System.out.println("登录失败---》" + ae);
-				return "redirect:login.jsp";
-			}
-			return "index";
+		// 把用户名和密码封装为 UsernamePasswordToken 对象
+		UsernamePasswordToken token = new UsernamePasswordToken(loginacct,
+				password);
+		// token.setRememberMe(true);
+		try {
+			// 执行登录.
+			currentUser.login(token);
+		} catch (AuthenticationException ae) {
+			System.out.println("登录失败---》" + ae);
+			return "redirect:/login.jsp";
 		}
-		return "index";
+		return "redirect:/index.html";
 
 	}
 }
