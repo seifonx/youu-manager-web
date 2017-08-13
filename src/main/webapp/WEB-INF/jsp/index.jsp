@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="${ctp}/assets/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="${ctp}/assets/vendor/linearicons/style.css">
 	<link rel="stylesheet" href="${ctp}/assets/vendor/chartist/css/chartist-custom.css">
+	<link rel="stylesheet" href="${ctp}/assets/vendor/layer-v3.0.3/layer/skin/default/layer.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="${ctp}/assets/css/main.css">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
@@ -31,6 +32,7 @@
 	<script src="${ctp}/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
 	<script src="${ctp}/assets/vendor/chartist/js/chartist.min.js"></script>
 	<script src="${ctp}/assets/scripts/klorofil-common.js"></script>
+	<script src="${ctp}/assets/vendor/layer-v3.0.3/layer/layer.js"></script>
 </head>
 
 <body>
@@ -183,6 +185,7 @@
 			$("#messageList").click(function() {
 				content = $("#messageContent").html();
 				$("#contentDiv").empty().append(content);
+				list();
 				return false;
 			});
 		});
